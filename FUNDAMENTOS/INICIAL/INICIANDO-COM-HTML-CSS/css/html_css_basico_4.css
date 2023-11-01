@@ -1,0 +1,19 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+
+#primeiro {
+    font-weight: bold;
+    color: aqua;
+}
+.par {
+  font-weight: bold;  
+  background-color: crimson;
+  color: gold;
+}
+
+.destaque {
+    font-size: 30px;
+}

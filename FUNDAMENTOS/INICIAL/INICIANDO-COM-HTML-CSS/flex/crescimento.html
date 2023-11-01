@@ -1,0 +1,67 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Crescimento</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        #voltar {
+            color: white;
+            display: inline-block;
+            background-color: green;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            text-decoration: none;
+        }
+
+        .flex-container {
+            width: 400px;
+
+            border: solid crimson 3px;
+
+            display: flex;
+            flex-direction: row;
+
+            /* Alinhamento no MAIN AXIS */
+            justify-content: center;
+
+        }
+
+        .maior {
+            flex: 3;
+        }
+
+        .medio {
+            flex-grow: 1.5;
+        }
+
+
+        .flex-container>div {
+            border: solid cyan 2px;
+            padding: 5px;
+            margin: 5px;
+            flex-basis: 20px; /*Largura do Elemento equivalente a Width*/
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Flex Box: Crescimento</h1>
+    <a id="voltar" href="./exercicios.html">Voltar</a>
+
+    <div class="flex-container">
+        <div class="maior">1</div>
+        <div>2</div>
+        <div class="medio">3</div>
+        <div>4</div>
+        <div class="maior">5</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <title>Box Sizing</title>
+        <style>
+            div {
+                width: 80px;
+                height: 80px;
+                padding: 10px;
+                border: 5px solid red;
+                box-sizing: content-box;
+
+            }
+            h3 {
+                font-size: 10px;
+            }
+            .boxsizing {
+                box-sizing: border-box;
+            }
+
+            
+        </style>
+    </head>
+    <body>
+        <h1>Box Sizing</h1>
+        <a href="./exercicios.html">Voltar</a>
+        
+        <h2>Box Sizing Content-box #1</h2>
+        <h3>Tamanho do Elemento: content (Width/height)  + padding + border</h3>
+        <div>DIV 1</div>
+
+
+        <h2>Box Sizing Border-box #2 </h2>
+        <h3>Tamanho do Elemnto: content (Width/Height) o padding e border estão inclusos no cálculo do tamanho. </h3>
+        <div class="boxsizing">DIV 2</div>
+    </body>
+</html>

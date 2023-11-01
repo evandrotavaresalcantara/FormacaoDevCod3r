@@ -1,0 +1,72 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Alinhamento Self</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        #voltar {
+            color: white;
+            display: inline-block;
+            background-color: green;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            text-decoration: none;
+        }
+
+        .flex-container {
+            width: 400px;
+            height: 300px;
+
+            border: solid crimson 3px;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+
+
+        .flex-container>div {
+            border: solid cyan 2px;
+            padding: 5px;
+            margin: 5px;
+
+        }
+
+        .baixo {
+            align-self: flex-end;
+        }
+
+        .cima {
+            align-self: flex-start;
+        }
+
+        .nao-funciona-no-flex {
+            justify-self: flex-end;
+            /* ignorada no FlexBox*/
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Flex Box: Alinhamento Self</h1>
+    <a id="voltar" href="./exercicios.html">Voltar</a>
+
+    <div class="flex-container">
+        <div class="baixo">1</div>
+        <div class="nao-funciona-no-flex">2</div>
+        <div class="cima">3</div>
+        <div>4</div>
+        <div class="baixo">5</div>
+    </div>
+</body>
+
+</html>

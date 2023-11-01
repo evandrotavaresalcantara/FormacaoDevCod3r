@@ -1,0 +1,87 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Menu</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .menu {
+            background-color: rgb(49, 46, 46);
+            color: white;
+            border-bottom: solid rgb(0, 255, 234);
+            height: 50px;
+        }
+
+        .conteudo {
+            background-color: rgb(204, 198, 198);
+            color: white;
+            height: calc(100vh - 52px);
+        }
+
+        .logo {
+            width: 70px;
+            margin-top: 5px;
+            margin-left: 5px;
+        }
+
+        ul {
+            margin: 0;
+            display: inline-block;
+        }
+
+        li {
+            margin: 3px;
+            display: inline;
+
+        }
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: 12px;
+        }
+        .login {
+            color: white;
+            display: inline-block;
+            background-color: black;
+            padding: 5px;
+            margin: 5px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            text-decoration: none;
+        }
+        .registro {
+            color: white;
+            display: inline-block;
+            background-color: red;
+            padding: 5px;
+            margin: 5px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="aplicacao">
+        <div class="menu">
+            <img class="logo" src="../image/formacaodevlogo.png" alt="LogoMarca">
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#Cursos">Cursos</a></li>
+                <li><a href="#Sobre">Sobre</a></li>
+                <li><a href="#Contato">Contato</a></li>
+            </ul>
+            <ul>
+                <li><a class="login" href="#login">Login</a></li>
+                <li><a class="registro" href="#cadastro" >Cadastro</a></li>
+            </ul>
+        </div>
+        <div class="conteudo">Conteúdo</div>
+    </div>
+</body>
+</html>

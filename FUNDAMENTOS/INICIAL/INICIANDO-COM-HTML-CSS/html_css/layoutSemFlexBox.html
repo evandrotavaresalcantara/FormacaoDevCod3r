@@ -1,0 +1,80 @@
+<!-- Tentar Fazer Esse Layout Sem Flex Box
+- Uma tentativa foi usando inline-block, mas o menu central 
+-->
+
+<html>
+
+<head>
+    <title>Unidades - ViewPort</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: white;
+            color: white;
+            font-size: 2.5rem;
+        }
+
+        #voltar {
+            color: black;
+            display: block;
+            padding-bottom: 20px;
+            padding-top: 20px;
+            font-size: 1rem;
+        }
+
+        .aplicacao {
+            display: inline-block;
+            height: 100vh;
+        }
+
+        .menu {
+            display: inline-block;
+            background-color: #555;
+            width: 150px;
+            height: 100vh;
+        }
+
+        .area-central {
+            display: inline-block;
+            width: 400px;
+            height: vh;
+
+        }
+
+        .barra-superior {
+            display: inline-block;
+            height: 8vh;
+            background-color: dodgerblue;
+        }
+
+        .conteudo {
+            display: inline-block;
+            height: 84vh;
+            background-color: #ddd;
+            color: black;
+        }
+
+        .rodape {
+            display: inline-block;
+            height: 8vh;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <div class="aplicacao">
+        <div class="menu">Menu</div>
+        <div class="area-central">
+            <div class="barra-superior">Barra Superior</div>
+            <div class="conteudo"> Conteúdo</div>
+            <div class="rodape">Rodapé</div>
+        </div>
+    </div>
+
+</body>
+
+</html>

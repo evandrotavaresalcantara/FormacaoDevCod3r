@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <title>Áreas</title>
+        <style>
+            body{
+                height: 100vh;
+                margin: 0;
+                background-color: black;
+                color: white;
+                display: grid;
+                grid-template-columns: 150px 1fr;
+                grid-template-rows:  50px 1fr 50px;
+                grid-template-areas: 
+                'menu cabecalho'
+                'menu conteudo'
+                'menu rodape' ;
+                
+                column-gap: 5px;
+                row-gap: 5px;
+                
+            }
+            body > * {
+                border: solid cyan 2px;
+                margin: 4px;
+            }
+
+            header {
+                border-color: crimson;
+                grid-area: cabecalho;
+            }
+            nav {
+                border-color: chartreuse;
+                grid-area: menu;
+            }
+            
+            main {
+                grid-area: conteudo;
+                
+            }
+            footer {
+                border-color: deeppink;
+                grid-area: rodape;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>Cabeçalho</header>
+        <nav>Menu</nav>
+        <main>Conteúdo</main>
+        <footer>Rodapé</footer>
+    </body>
+</html>

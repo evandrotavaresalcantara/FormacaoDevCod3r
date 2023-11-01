@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Encolhimento</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        #voltar {
+            color: white;
+            display: inline-block;
+            background-color: green;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            text-decoration: none;
+        }
+
+        .flex-container {
+            width: 400px;
+
+            border: solid crimson 3px;
+
+            display: flex;
+            flex-direction: row;
+            width: 200px;
+
+                 }
+
+       
+
+        .flex-container>div {
+            border: solid cyan 2px;
+            padding: 5px;
+            margin: 5px;
+            flex-basis: 30px; 
+
+        }
+
+        .div-1, .div-2, .div-4, .div-5 {
+            flex-shrink: 1;
+        }
+        .div-3{
+            flex-shrink: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Flex Box: Encolhimento</h1>
+    <a id="voltar" href="./exercicios.html">Voltar</a>
+
+    <div class="flex-container">
+        <div class="div-1">1</div>
+        <div class="div-2">2</div>
+        <div class="div-3">3</div>
+        <div class="div-4">4</div>
+        <div class="div-5">5</div>
+    </div>
+</body>
+
+</html>

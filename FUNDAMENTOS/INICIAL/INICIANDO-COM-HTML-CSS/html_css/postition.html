@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <title>Position</title>
+        <style>
+            body {
+                background-color: black;
+                color: white;
+                font-size: 60px;
+                height: 3000px;
+                margin: 30px;
+            }
+            div {
+                border: solid 5px #ccc;
+                padding: 30px;
+
+            }
+            .static{
+                position: static;
+                background-color: dodgerblue;
+            }
+            .fixed {
+                /* Relativo ao ViewPort */
+                position: fixed;
+                bottom: 30px;
+                right: 30px;
+                background-color: purple;
+            }
+            .relative {
+                /* Relativo ao elemento ao lado */
+                position: relative;
+                top: 10px;
+                left: 40px;
+                background-color: forestgreen;
+                /* overflow: hidden; */
+
+            }
+            .absolute {
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                background-color: red;
+
+            }
+            .sticky{
+                position: sticky;
+                background-color: #555;
+                top: 0px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="static">Estático (padrão)</div>
+        <div class="fixed">Fixo</div>
+        <div class="relative">Relativo</div>
+        <div class="absolute">Absoluto</div>
+        <div class="relative">
+            Relativo
+            <div class="absolute">Absoluto</div>
+        </div>
+        <div class="sticky">Pegajoso</div>
+    </body>
+</html>

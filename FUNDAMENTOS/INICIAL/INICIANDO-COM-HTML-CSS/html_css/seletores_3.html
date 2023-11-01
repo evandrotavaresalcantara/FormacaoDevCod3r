@@ -1,0 +1,72 @@
+<html>
+
+<head>
+    <title>Seletores #01</title>
+    <style>
+        #volta {
+            color: white;
+        }
+        body {
+            background-color: black;
+            color: white;
+        }
+        
+        /*  */
+        
+        span+p {
+            background-color: crimson;
+        }
+
+        div~p {
+            background-color: blue;
+        }
+        .exemplo-filhos>p {
+            background-color: burlywood;
+        }
+
+        #exemplo-descendentes p {
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Seletores Combinados</h1>
+    <a href="./exercicios.html">Voltar</a>
+
+    <h2>Seletores de Irmãos Adjacentes</h2>
+    <div>
+        <span>Antes</span>
+
+        <p>Parágrafo #01</p>
+        <p>Parágrafo #02</p>
+    </div>
+
+    <h2>Seletores de Irmãos Gerais</h2>
+    <div>
+        <div>Antes</div>
+        <div></div>
+        <p>Parágrafo #01</p>
+        <p>Parágrafo #02</p>
+    </div>
+
+    <h2>Seletores de Filhos Direto</h2>
+    <div class="exemplo-filhos">
+        <div>Antes</div>
+        <p>Parágrafo #01</p>
+        <div>
+            <p>Parágrafo #02</p>
+        </div>
+    </div>
+
+    <h2>Seletores de Filhos Descendentes</h2>
+    <div id="exemplo-descendentes">
+        <p>Parágrafo #01</p>
+        <div>
+            <p>Parágrafo #02</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

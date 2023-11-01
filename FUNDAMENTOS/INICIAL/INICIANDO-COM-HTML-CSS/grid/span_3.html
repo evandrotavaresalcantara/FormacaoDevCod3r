@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>CSS Grid Span #3</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            margin: 60px;
+        }
+
+        .grid>div {
+            border: solid cyan 1px;
+            padding: 5px;
+            margin: 2px;
+        }
+
+        .grid {
+            height: 100%;
+            display: grid;
+            grid-template-columns: [a]1fr [b]1fr [c]1fr [d];
+            grid-template-rows: 1fr 1fr 1fr;
+
+
+        }
+
+        .d1 {
+            grid-column-start: a;
+            grid-column-end: d;
+    
+        }
+
+ 
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <div class="d1">1</div>
+        <div class="d2">2</div>
+        <div class="d3">3</div>
+    </div>
+</body>
+
+</html>

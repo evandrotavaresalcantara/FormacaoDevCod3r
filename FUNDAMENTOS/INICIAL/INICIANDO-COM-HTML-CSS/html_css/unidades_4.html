@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <title>Unidades - Percentual</title>
+    <style>
+       body {
+        background-color: black;
+        color: white;
+       }
+       .externa {
+        position: relative;
+        background-color: orange;
+        width: 400px;
+        height: 400px;
+        padding: 50px;
+       }
+       .interna {
+        background-color: mediumvioletred;
+        height: 25%;
+        width: 100%;
+        position: static; /* Conteúdo*/
+        position: relative; /*Conteúdo*/ 
+        position: absolute; /* coneúdo + padding | Para definir o Percentual considera o conteúdo e o padding*/
+        /* top: 0; */
+        /* left: 0; */
+        position: fixed; /* Considerando o tamanho do viewPort*/
+       }
+    </style>
+</head>
+<body>
+    <div class="externa">
+    <div class="interna"></div>    
+    </div>
+</body>
+</html>

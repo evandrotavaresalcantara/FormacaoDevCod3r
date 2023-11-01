@@ -1,0 +1,90 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Menu</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: bbb;
+            margin: 0;
+        }
+
+        .cabecalho {
+            background-color: #333;
+            color: white;
+            border-bottom: solid 3px #06caca;
+            height: 80px;
+            padding: 0px 10px;
+            font-size: 1rem;
+            font-weight: 200;
+
+            display: flex;
+            align-items: center;
+
+        }
+
+   
+        .logo img {
+            height: 50px;
+        }
+        
+        .menu a:hover {
+            background-color: #05aaaa;
+            padding: 10px;
+        }
+        .menu> ul {
+            list-style: none;
+            display: flex;
+
+        }
+
+        .menu {
+            flex-grow: 1;
+        }
+        .menu a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0px 5px;
+        }
+
+        .botao {
+            padding: 5px 30px;
+            background-color: black;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+        }
+        .destaque {
+            background-color: crimson;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="logo">
+            <a href="#inicio">
+                <img src="http://files.cod3r.com.br/curso-web/logo.png" alt="logo">
+            </a>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#cursos">Cursos</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="botoes-autenticacao">
+            <a class="botao" href="#login">Entrar</a>
+            <a class="botao destaque" href="#cadastro">Cadastro</a>
+        </div>
+    </header>
+</body>
+
+</html>

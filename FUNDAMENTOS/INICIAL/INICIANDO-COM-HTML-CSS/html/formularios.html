@@ -1,0 +1,67 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <a href="./exercicios.html">Voltar</a>
+    <h2>Fomulários</h2>
+
+    <form action="exercicios.html" method="get">
+        <div>
+            <div><label for="nome">Nome:</label></div>
+            <input type="text" id="nome" name="nome" value="Meu Nome" required>
+        </div>
+        <div>
+            <div><label for="email">E-mail:</label></div>
+            <input type="email" id="email" name="email" value="email@email.com">
+        </div>
+        <div>
+            <div><label for="senha">Senha:</label></div>
+            <input type="password" id="senha" name="senha" value="senha123">
+        </div>
+        <div>
+            <div><label for="numero">Número:</label></div>
+            <input type="numero" id="numero" name="numero" value="888">
+        </div>
+        <div>
+            <div><label for="texto">Texto:</label></div>
+            <textarea name="texto" id="texto" cols="30" rows="5"></textarea>
+        </div>
+        <div>
+            <div>Tipo de Residência:</div>
+            <input type="radio" name="residencia" id="casa" value="casa">
+            <label for="casa">Casa</label>
+            <input type="radio" name="residencia" id="apt" value="apt">
+            <label for="apt">Apartamento</label>
+            <input type="radio" name="residencia" id="comercio" value="comercio">
+            <label for="comercio">Comercio</label>
+        </div>
+        <div>
+            <div>Selecione O seu Plano:</div>
+            <select name="plano" id="plano">
+                <option value="plano1">Plano1</option>
+                <option value="plano2">Plano2</option>
+                <option value="plano3">Plano3</option>
+            </select>
+        </div>
+        <div>
+            <div>Tecnologia: </div>
+            <input type="checkbox" name="html" id="html">
+            <label for="html">HTML</label>
+            <input type="checkbox" name="css" id="css">
+            <label for="css">CSS</label>
+            <input type="checkbox" name="js" id="js">
+            <label for="js">JAVA SCRIPT</label>
+        </div>
+        <div>
+            <button>Salvar</button>
+            <button type="reset">Limpar</button>
+        </div>
+    </form>
+
+</body>
+
+</html>

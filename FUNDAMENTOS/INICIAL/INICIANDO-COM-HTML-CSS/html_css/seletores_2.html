@@ -1,0 +1,77 @@
+<html>
+
+<head>
+    <title>Seletores #01</title>
+    <style>
+        #volta {
+            color: white;
+        }
+        body {
+            background-color: black;
+            color: white;
+        }
+        h2:nth-child(2) {
+            background-color: rebeccapurple;
+            margin-left: 10px;
+            text-transform: uppercase;
+        }
+
+        div:nth-child(odd){
+            background-color: green;    
+           
+        }
+        div:nth-child(even){
+            background-color: rgb(161, 245, 161);    
+           
+        }
+        div:hover {
+            background-color: purple;
+        }
+
+        input:focus {
+            outline: none;
+            border: 2px solid greenyellow;
+            border-radius: 2px;
+        }
+
+        p::first-letter {
+            font-size: 50px;
+        }
+
+        p::first-line {
+            color: crimson;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Seletores - Pseudo</h1>
+    <a id="volta" href="./exercicios.html">Voltar</a>
+    <h2>Segundo Elemento Filho</h2>
+
+    <h2>Seletores de Pseudo-Classess</h2>
+    <div>A</div>
+    <div>B</div>
+    <div>C</div>
+    
+    <hr>
+    <input type="text">
+
+    <h2>Seletores de Pseudo-Elementos</h2>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur
+        adipisicing elit. Magni facilis quisquam
+        unde a cumque quam? Corrupti harum quidem minima,
+        eum laboriosam inventore sunt voluptatum illum
+        nobis commodi! Deserunt, maxime numquam.
+    </p>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur
+        adipisicing elit. Magni facilis quisquam
+        unde a cumque quam? Corrupti harum quidem minima,
+        eum laboriosam inventore sunt voluptatum illum
+        nobis commodi! Deserunt, maxime numquam.
+    </p>
+</body>
+
+</html>
