@@ -1,0 +1,4 @@
+Evandro 9.3
+Maria 9
+Jose 8
+Joice 7.9
